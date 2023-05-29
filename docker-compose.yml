@@ -1,0 +1,19 @@
+version: '3'
+
+services:
+
+  server:
+    image: node/server
+    build: .
+    ports:
+      - "3000:3000"
+    command: npm start
+    environment:
+      PORT: 3000
+    volumes:
+      - .:/usr/server
+
+  database:
+    image: 'mongo'
+    ports:
+      - '27017:27017'
