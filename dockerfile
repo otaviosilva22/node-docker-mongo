@@ -1,4 +1,4 @@
-FROM node:12-alpine
+FROM node:alpine
 
 WORKDIR /usr/server
 
@@ -8,6 +8,6 @@ RUN npm install
 
 COPY . . 
 
-EXPOSE 3000
+EXPOSE 3333
 
 CMD npm start

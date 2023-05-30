@@ -6,14 +6,16 @@ services:
     image: node/server
     build: .
     ports:
-      - "3000:3000"
+      - "3333:3333"
     command: npm start
     environment:
-      PORT: 3000
+      PORT: 3333
     volumes:
-      - .:/usr/server
+      - .:/usr/server  
 
-  database:
+  mongo_database:
     image: 'mongo'
     ports:
       - '27017:27017'
+    volumes:
+      - ./data/db:/data/db

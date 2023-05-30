@@ -1,0 +1,100 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "node-docker-mongo",
+    "dateExported": "2023-05-30T16:27:04.821Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "1677b490-f9b3-4a39-b72b-e0267471d8d4",
+            "colId": "644b7bb3-5ba7-41a4-916c-390ef88ec374",
+            "containerId": "",
+            "name": "create",
+            "url": "http://localhost:3333/create",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2023-05-30T15:55:21.175Z",
+            "modified": "2023-05-30T15:57:31.866Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"value\": 10.0,\n  \"description\": \"venda\",\n  \"move_date\": \"30/05/2023\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "c7e7afcb-c346-40d7-adcf-29b12c55f477",
+            "colId": "644b7bb3-5ba7-41a4-916c-390ef88ec374",
+            "containerId": "",
+            "name": "readAll",
+            "url": "http://localhost:3333/readAll",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2023-05-30T16:03:00.900Z",
+            "modified": "2023-05-30T16:03:08.452Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "fcfb0319-5f84-4df5-be22-98e2c70564c0",
+            "colId": "644b7bb3-5ba7-41a4-916c-390ef88ec374",
+            "containerId": "",
+            "name": "readById",
+            "url": "http://localhost:3333/readById?id=64761ceb0b27fcb861c87fe1",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2023-05-30T16:06:34.238Z",
+            "modified": "2023-05-30T16:08:12.524Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "id",
+                    "value": "64761ceb0b27fcb861c87fe1",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "2411f56a-ccb0-4ec8-a072-9016bc93b34f",
+            "colId": "644b7bb3-5ba7-41a4-916c-390ef88ec374",
+            "containerId": "",
+            "name": "update",
+            "url": "http://localhost:3333/update",
+            "method": "PUT",
+            "sortNum": 30000,
+            "created": "2023-05-30T16:15:01.312Z",
+            "modified": "2023-05-30T16:21:17.608Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"_id\": \"64761ceb0b27fcb861c87fe1\",\n  \"value\": 10,\n  \"description\": \"retirada\",\n  \"move_date\": \"30/05/2023\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "01bcf0c3-c335-43ac-bf99-68d2ef934a91",
+            "colId": "644b7bb3-5ba7-41a4-916c-390ef88ec374",
+            "containerId": "",
+            "name": "delete",
+            "url": "http://localhost:3333/delete",
+            "method": "DELETE",
+            "sortNum": 40000,
+            "created": "2023-05-30T16:24:00.809Z",
+            "modified": "2023-05-30T16:24:24.064Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"_id\": \"64761ceb0b27fcb861c87fe2\"\n}",
+                "form": []
+            },
+            "tests": []
+        }
+    ]
+}
