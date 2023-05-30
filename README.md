@@ -18,7 +18,7 @@ docker-compose up
 ## Collection
 A collection das APIs foi feita com apoio da extensão ThunderClient para Vscode, podendo ser visualizada clicando <a href='./src/thunder-collection_node-docker-mongo.json'>aqui</a>.
 
-## Exemplo:
+## Exemplo de API
 
 ~~~ bash
 REQUEST (GET): 
